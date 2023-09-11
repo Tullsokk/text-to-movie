@@ -1,10 +1,15 @@
 # text-to-movie
 A google colab notebook for generating short films from a single prompt 
-
+## Background
 This is an open project I started to see how hard it would be to cobble together some code that can generate a full movie from a single prompt. Not that hard, as it turns out, when GPT can help with the coding. You are welcome to contribute to the project. A lot of the code is written with the help of GPT, and has just been thrown together to get the basics working. Is is quite messy, not very efficient, but in time and with some help, I hope to get it in good shape. 
 
-In this notebook, you can give a movie title and a description. You need api tokens for openAI and elevenlabs. A paid google colab will also help with more and faster GPU compute. 
+## What is does
+In this notebook, you can give a movie title and a description. You need api tokens for openAI and elevenlabs. A paid google colab will also help with more and faster GPU compute.
 
+## How to use
+Just open the notebook in google colab. You need to use a GPU compute. The free tier should give you a movie or two, or upgrade to have more compute available. Enter your elevenlabs and openai api tokens, decide on a movie title and description, and run the cells. The video can be copied to your google drive or downloaded locally. 
+
+## How the notebook works 
 In short, the code does the following:
 - GTP is then used to write a movie script. The system prompt is primed to give a structured response in a defined json format that inculdes a scene description, music description and dialogue. If the response is not valid json, GPT is asked to try again.
 - All characters are extracted. A list of all availavle voices from elevenlabs, including age, gender and description of the voice is sent to GPT along with the list of characters, with instruction to return a suitable casting. It tends to cast Han Solo as a middle aged war veteran, Princess Leia is a calm young lady, C3PO gets a british accents, etc.
@@ -18,6 +23,7 @@ In short, the code does the following:
 
 The results are, unsurprisingly, quite janky, but entertaining notetheless. Much like the early days of text to imgage with dalle mini/craiyon. 
 
+## Further work
 Some of the improvements I hope to see are:
 - More consistent videos
 - Fix multi line captions and subtitles
