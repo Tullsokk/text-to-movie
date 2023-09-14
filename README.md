@@ -7,7 +7,7 @@ This is an open project I started to see how hard it would be to cobble together
 In this notebook, you can give a movie title and a description. You need api tokens for openAI and elevenlabs. A paid google colab will also help with more and faster GPU compute.
 
 ## How to use
-Just open the notebook in google colab. You need to use a GPU compute. The free tier should give you a movie or two, or upgrade to have more compute available. Enter your elevenlabs and openai api tokens, decide on a movie title and description, and run the cells. The video can be copied to your google drive or downloaded locally. 
+Just open the notebook in google colab. You need to use a GPU compute. The free tier should give you a movie or two, or upgrade to have more compute available. Select which model to use, modelscope or zeroscope (better quality and longer run time) . Enter your elevenlabs and openai api tokens, decide on a movie title and description, and run the cells. The video can be copied to your google drive or downloaded locally. 
 
 ## How the notebook works 
 In short, the code does the following:
@@ -26,11 +26,11 @@ The results are, unsurprisingly, quite janky, but entertaining notetheless. Much
 ## Further work
 Some of the improvements I hope to see are:
 - More consistent videos
-- Fix multi line captions and subtitles
+- Fix multi line captions and subtitles (solved)
 - Add movie poster
 - Get rid of issues with some clips only consisting of noise
-- Improved video model
+- Improved video model (solved)
 - Upscaling and increasing frame rate by interpolating frames
-- Better music
-- 16:9 video format
+- Better music (solved)
+- 16:9 video format (solved)
 - Fix issues with stuttering last dialouge in final scene
